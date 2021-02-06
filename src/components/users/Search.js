@@ -27,13 +27,13 @@ const Search =()=> {
             >
             <input
                 type="text"
-                name="text"placeholder='Search user...'
+                name="text"placeholder='github user name'
                 value={text}
                 onChange={onChange}
             />
             <input
                 type="submit"
-                value='Search'
+                value='搜索'
                 className='btn btn-dark btn-block'
             />
             </form>

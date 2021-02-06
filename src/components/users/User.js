@@ -28,12 +28,16 @@ const User = ({ match }) => {
     return (
         <Fragment>
             <Link to='/' className='btn'
-            style={{border:'1px solid #ccc'}}>return</Link>
+                style={{ border: '1px solid #ccc',background:'white' }}>
+                <i className='fa fa-reply color1'/>
+                </Link>
             <a
                 href={html_url}
-                className='btn  my-1'
-                style={{border:'1px solid #ccc'}}
-            >github</a>
+                className='btn my-1'
+                style={{border:'1px solid #ccc',background:'white'}}
+            >
+                <i className='fa fa-github color1'/>
+                </a>
             
             <div className='card grid-2'>
                 <div className='all-center'>
@@ -47,42 +51,50 @@ const User = ({ match }) => {
                 <div>
                     <ul>
                         <li>
-                            <strong>登录名：</strong>
+                        <i className='fa fa-user-o'/> &nbsp;
+                            <span>登录名：</span>
                             {login ? (<>{login}</>):('')}
                         </li>
                         <li>
-                            <strong>简介：</strong>
+                        <i className='fa fa-pencil-square-o'/> &nbsp;
+                            <span>简介：</span>
                             {bio ? (<>{bio}</>):('未填')}
                         </li>
                         <li>
-                            <strong>住址：</strong>
+                        <i className='fa fa-home'/> &nbsp;
+                            <span>住址：</span>
                             {location ? (<>{location}</>):('未填')}
                         </li>
                         <li>
-                            <strong>公司：</strong>
+                        <i className='fa fa-university'/> &nbsp;
+                            <span>公司：</span>
                             {company ? (<>{company}</>):('未填')}
                         </li>
                         <li>
-                            <strong>网址：</strong>
+                        <i className='fa fa-at'/> &nbsp;
+                            <span>网址：</span>
                             {blog ? (<>{blog}</>):('未填')}
                         </li>
                         <li>
-                            <strong>创建日期：</strong>
+                        <i className='fa fa-clock-o'/> &nbsp;
+                            <span>创建日期：</span>
                             {createdDate ? (<>{createdDate}</>):('')}
                         </li>
                         <li>
-                            <strong>最近登录：</strong>
+                        <i className='fa fa-window-restore'/> &nbsp;
+                            <span>最近登录：</span>
                             {updatedDate ? (<>{updatedDate}</>):('')}
                         </li>
                     </ul>
                 </div>
             </div>
             <div className="card text-center">
-                <div className='badge badge-primary'>Followers:{followers}</div>
-                <div className='badge badge-success'>Following:{following}</div>
-                <div className='badge badge-light'>Public Repos:{public_repos}</div>
-                <div className='badge badge-dark'>Public Gists:{public_gists}</div>
+                <div className='badge badge-primary color2'>Followers:{followers}</div>
+                <div className='badge badge-success color2'>Following:{following}</div>
+                <div className='badge badge-light color2'>Public Repos:{public_repos}</div>
+                <div className='badge badge-dark color2'>Public Gists:{public_gists}</div>
             </div>
+            <div>最近项目</div>
             <Repos repos={repos} />
         </Fragment>
     );   

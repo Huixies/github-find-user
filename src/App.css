@@ -20,7 +20,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
-  color: #333;
+  color: rgb(116, 116, 116);
 }
 
 a {
@@ -376,8 +376,35 @@ table th {
   margin-right: 0.6rem;
 }
 
+.users1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+.navbar1 {
+  background: rgb(67, 33, 0);
+  background: linear-gradient(
+    130deg,
+    rgba(67, 33, 0, 1) 0%,
+    rgba(89, 52, 12, 1) 61%,
+    rgba(67, 33, 0, 1) 75%
+  );
+  color: white;
+}
+.color1 {
+  color: rgb(114, 63, 13);
+}
+.color2 {
+  background: rgb(114, 63, 13);
+  color: white;
+}
+.about2 {
+  margin: 50px;
+}
+
 /* Mobile Styles */
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .hide-sm {
     display: none;
   }
@@ -410,5 +437,22 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+  .home1,
+  .about1 {
+    display: none;
+  }
+
+  .users2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .login1 {
+    width: 115px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
