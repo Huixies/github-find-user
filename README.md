@@ -1,7 +1,9 @@
 # github-find-user
-已部署到netlify
+
+已部署到netlify（有时无法加载页面，需要梯子）
 
 在输入框中填写github用户名称</br>
+
 <img src="https://github.com/Huixies/github-find-user/blob/master/readmeImg/49.png" style="border='1px solid #ccc'"></br>
 
 点击搜索</br>
