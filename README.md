@@ -12,7 +12,7 @@
 
 查询出对应的用户信息</br>
 
-<img src="https://github.com/Huixies/github-find-user/blob/master/readmeImg/10.png" width="1384" height="713" ></br>
+<img src="https://github.com/Huixies/github-find-user/blob/master/readmeImg/10.png" width="1384" height="auto" ></br>
 
 同时进行了移动端适配</br>
 
