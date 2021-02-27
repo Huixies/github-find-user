@@ -4,7 +4,7 @@
 
 在输入框中填写github用户名称</br>
 
-<img src="https://github.com/Huixies/github-find-user/blob/master/readmeImg/49.png" /></br>
+<img src="./readmeImg/49.png" /></br>
 
 点击搜索</br>
 
